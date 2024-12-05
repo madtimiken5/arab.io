@@ -1,0 +1,103 @@
+/* Базовые стили */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #111;
+}
+
+/* Шапка */
+.header {
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #ff5500;
+}
+
+/* Секция с изображением */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('C:\Users\filip\OneDrive\Рабочий стол\Новая папка (4)\assets/stadinm.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hero-overlay h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Секция концертов */
+.concerts {
+    padding: 20px;
+    text-align: center;
+    background-color: #222;
+}
+
+.concerts h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.concert-item {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.concert-item p {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5500;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff3300;
+}
